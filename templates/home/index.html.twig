@@ -19,7 +19,7 @@
     <div class="card">
     <div class="card-body">
         <h6 class="card-title">
-            <a href=""> {{ property.title }} </a>
+        <a href="{{ path('property_show', { id: property.id, slug: property.slug }) }}"> {{ property.title }} </a>
         </h6>
 <p class="card-text">
 {{ property.city }} ( {{ property.postalCode }})
